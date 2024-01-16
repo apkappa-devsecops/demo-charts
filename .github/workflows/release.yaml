@@ -26,7 +26,14 @@ jobs:
       - name: Install Helm
         uses: azure/setup-helm@v3
 
+      - name: Generate a token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APKAPPA_CHART_RELEASER_APP_ID }}
+          private-key: ${{ secrets.APKAPPA_CHART_RELEASER_PRIVATE_KEY }}
+
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.6.0
         env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          CR_TOKEN: "${{ steps.generate_token.outputs.token }}"
