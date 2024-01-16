@@ -3,6 +3,16 @@ entries:
   micro1:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-01-16T10:44:15.125918564Z"
+    description: A Helm chart for Kubernetes
+    digest: d30faa2faaf5a1e3ec8fade037b4b797755f5a78f8e9b11562d93e323852f5fa
+    name: micro1
+    type: application
+    urls:
+    - https://github.com/apkappa-devsecops/demo-charts/releases/download/micro1-0.1.2/micro1-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-01-16T08:16:31.368639919Z"
     description: A Helm chart for Kubernetes
     digest: 2d515ca09cd44c2f7589b9c7e1da2ef49e58a53bf1ac726c092fd5149c30f372
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/apkappa-devsecops/demo-charts/releases/download/micro1-0.1.1/micro1-0.1.1.tgz
     version: 0.1.1
-generated: "2024-01-16T08:16:31.36864568Z"
+generated: "2024-01-16T10:44:15.125931197Z"
